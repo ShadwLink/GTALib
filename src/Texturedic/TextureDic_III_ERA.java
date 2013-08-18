@@ -8,7 +8,8 @@ package Texturedic;
 import javax.media.opengl.GL;
 import javax.media.opengl.GL2;
 
-import dff.Finals;
+import _3DModel.dff.ConstantsDFF;
+
 import file_io.ByteReader;
 import file_io.Message;
 import file_io.ReadFunctions;
@@ -50,9 +51,9 @@ public class TextureDic_III_ERA {
 			Message.displayMsgLow("secSize: " + secSize);
 			Message.displayMsgLow("secVersion: " + secVersion);
 			switch (secID) {
-			case Finals.rwDATA:
+			case ConstantsDFF.rwDATA:
 				switch (lastID) {
-				case Finals.rwTEXDIC:
+				case ConstantsDFF.rwTEXDIC:
 					Message.displayMsgHigh("RW Texdic");
 					int texCount = br.ReadUInt16();
 					txd.textureCount = texCount;
@@ -66,7 +67,7 @@ public class TextureDic_III_ERA {
 						gl.glGenTextures(texCount, textureId, 0);
 
 					break;
-				case Finals.rwTEXNAT:
+				case ConstantsDFF.rwTEXNAT:
 					Texture tex = new Texture();
 					int platformID = br.ReadUInt32();
 					int filterFlags = br.ReadUInt16();

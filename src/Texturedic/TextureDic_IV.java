@@ -10,7 +10,8 @@ import java.util.ArrayList;
 import javax.media.opengl.GL;
 import javax.media.opengl.GL2;
 
-import wdr.ResourceFile;
+import _3DModel.wdr.ResourceFile;
+
 import file_io.ByteReader;
 import file_io.Message;
 import file_io.ReadFunctions;
