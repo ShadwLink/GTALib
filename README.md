@@ -3,9 +3,10 @@ GTALib
 
 GTA Library, loading several GTA file formats
 
-This lib can load:
+This library can load:
 - DFF (III era models)
 - WDR (IV models)
+- COL
 - IPL
 - WPL
 - IDE
@@ -15,3 +16,4 @@ This lib can load:
 - DAT
  - water.dat
  - gta.dat
+- Paths
