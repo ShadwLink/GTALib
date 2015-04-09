@@ -4,3 +4,11 @@
 *.jar
 *.war
 *.ear
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Shadow-mapper settings
+settings.json
