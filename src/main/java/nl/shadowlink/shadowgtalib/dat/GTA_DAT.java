@@ -15,6 +15,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import nl.shadowlink.shadowgtalib.utils.Constants;
+import nl.shadowlink.shadowgtalib.utils.Constants.GameType;
 
 /**
  * @author Kilian Steenman (Shadow-Link)
@@ -25,7 +26,7 @@ public class GTA_DAT {
 
 	private String gameDir; // game dir
 	private String fileName; // file name
-	private int gameType; // gametype ie: SA
+	private GameType mGameType; // gametype ie: SA
 
 	public boolean changed = false; // True when the file needs to be saved
 
@@ -37,20 +38,20 @@ public class GTA_DAT {
 	public ArrayList<String> colFile = new ArrayList();
 	public ArrayList<String> splash = new ArrayList();
 
-	public GTA_DAT(String gameDir, int gameType) {
+	public GTA_DAT(String gameDir, final GameType pGameType) {
 		this.gameDir = gameDir;
-		this.gameType = gameType;
-		switch (this.gameType) {
-			case Constants.gIII:
+		mGameType = pGameType;
+		switch (mGameType) {
+			case GTA_III:
 				this.fileName = gameDir + "data/gta3.dat";
 				break;
-			case Constants.gVC:
+			case GTA_VC:
 				this.fileName = gameDir + "data/gta_vc.dat";
 				break;
-			case Constants.gSA:
+			case GTA_SA:
 				this.fileName = gameDir + "data/gta.dat";
 				break;
-			case Constants.gIV:
+			case GTA_IV:
 				this.fileName = gameDir + "common/data/gta.dat";
 				break;
 		}
