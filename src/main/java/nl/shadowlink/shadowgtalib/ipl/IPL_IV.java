@@ -120,7 +120,7 @@ public class IPL_IV {
 		unused8 = rf.readInt(); // unused
 		blok = rf.readInt(); // number of bloks
 		// System.out.println(version);
-		System.out.println(inst);
+		// System.out.println(inst);
 		/* System.out.println(unused1); System.out.println(grge); System.out.println(cars); System.out.println(cull);
 		 * System.out.println(unused2); System.out.println(unused3); System.out.println(unused4);
 		 * System.out.println(strbig); System.out.println(lcul); System.out.println(zone); System.out.println(unused5);

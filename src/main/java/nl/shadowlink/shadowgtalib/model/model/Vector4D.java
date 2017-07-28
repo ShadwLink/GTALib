@@ -8,6 +8,8 @@ package nl.shadowlink.shadowgtalib.model.model;
 import nl.shadowlink.file_io.ByteReader;
 import nl.shadowlink.file_io.ReadFunctions;
 import nl.shadowlink.file_io.WriteFunctions;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * @author Kilian
@@ -88,7 +90,7 @@ public class Vector4D {
 	}
 
 	public void print(String name) {
-		System.out.println(name + ": " + x + ", " + y + ", " + z + ", " + w);
+		Logger.getLogger("Vector4d").log(Level.INFO, name + ": " + x + ", " + y + ", " + z + ", " + w);
 	}
 
 	public Vector4D getAxisAngle() {

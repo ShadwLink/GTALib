@@ -58,7 +58,7 @@ public class Item_CARS extends IPL_Item {
 		unknown5 = rf.readInt();
 		unknown6 = rf.readInt();
 		unknown7 = rf.readInt();
-		display();
+//		display();
 	}
 
 	private void display() {

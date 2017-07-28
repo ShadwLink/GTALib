@@ -4,7 +4,6 @@ package nl.shadowlink.shadowgtalib.utils;
  * Contains utilities for hash generation/reversal
  *
  * @author Kilian Steenman (Shadow-Link)
- *
  */
 public class HashUtils {
 
@@ -12,10 +11,10 @@ public class HashUtils {
 	 * Generate hash for key
 	 *
 	 * @param key
-	 *            The key to generate the hash for
+	 *        The key to generate the hash for
 	 * @return The hash
 	 */
-	public static long genHash(String key) {
+	public static long genHash(final String key) {
 		int hash = 0;
 
 		for (int i = 0; i < key.length(); i++) {

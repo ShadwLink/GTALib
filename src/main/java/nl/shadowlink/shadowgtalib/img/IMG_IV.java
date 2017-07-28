@@ -357,6 +357,7 @@ public class IMG_IV {
 		} catch (Exception ex) {
 			JOptionPane.showMessageDialog(null,
 					"You didn't install the JCE unlimited strength files. Follow the usage instructions in the readme.\nThis program will now exit.");
+			Logger.getLogger("IMG").log(Level.SEVERE, "Unable to use JCE: " + ex.toString());
 			System.exit(0);
 		}
 

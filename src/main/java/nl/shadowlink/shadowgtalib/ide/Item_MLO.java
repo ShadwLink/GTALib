@@ -22,7 +22,7 @@ public class Item_MLO extends IDE_Item {
 
 	@Override
 	public void read(String line) {
-		System.out.println("Not supported yet.");
+		Logger.getLogger("IDE").log(Level.INFO, getClass().getSimpleName() + " not supported yet.");
 	}
 
 	public void save(BufferedWriter output) {

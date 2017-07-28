@@ -9,6 +9,8 @@ import nl.shadowlink.file_io.ByteReader;
 import nl.shadowlink.shadowgtalib.model.collections.PtrCollection;
 import nl.shadowlink.shadowgtalib.model.model.Vector4D;
 import nl.shadowlink.shadowgtalib.utils.Utils;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * @author Kilian
@@ -29,7 +31,7 @@ public class DrawableModel {
 	int[] modelOffsets;
 	public int levelOfDetailCount;
 
-	public PtrCollection<Model2>[] ModelCollection;
+	public PtrCollection<Model2>[] mModelCollection;
 
 	public Vector4D AbsoluteMax;
 
@@ -120,11 +122,11 @@ public class DrawableModel {
 		}
 
 		// Message.displayMsgHigh("Created new PtrCollection");
-		ModelCollection = new PtrCollection[levelOfDetailCount];
+		mModelCollection = new PtrCollection[levelOfDetailCount];
 		for (int i = 0; i < levelOfDetailCount; i++) {
-			// Message.displayMsgHigh("Offset: " + modelOffsets[i]);
+			Logger.getGlobal().log(Level.INFO, "PointerCollectionOffset: {0}", modelOffsets[i]);
 			br.setCurrentOffset(modelOffsets[i]);
-			ModelCollection[i] = new PtrCollection<Model2>(br, 1);
+			mModelCollection[i] = new PtrCollection<>(br, 1);
 		}
 
 	}

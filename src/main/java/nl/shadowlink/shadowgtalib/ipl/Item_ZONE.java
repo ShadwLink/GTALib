@@ -8,6 +8,8 @@ package nl.shadowlink.shadowgtalib.ipl;
 import com.nikhaldimann.inieditor.IniEditor;
 import nl.shadowlink.file_io.ReadFunctions;
 import nl.shadowlink.shadowgtalib.model.model.Vector3D;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * @author Kilian
@@ -41,7 +43,7 @@ public class Item_ZONE extends IPL_Item {
 
 	@Override
 	public void read(ReadFunctions rf, IniEditor ini) {
-		System.out.println("Not supported yet.");
+		Logger.getLogger("IPL").log(Level.INFO, getClass().getSimpleName() + " not supported yet.");
 	}
 
 }

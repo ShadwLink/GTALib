@@ -97,12 +97,12 @@ public class Item_INST extends IPL_Item {
 		// Message.displayMsgLow("iName: " + name);
 
 		unknown1 = rf.readInt();
-		System.out.println("Unknown1: " + unknown1);
+		// System.out.println("Unknown1: " + unknown1);
 		lod = rf.readInt();
 		unknown2 = rf.readInt();
-		System.out.println("Unknown2: " + unknown2);
+		// System.out.println("Unknown2: " + unknown2);
 		unknown3 = rf.readFloat();
-		System.out.println("Unknown3: " + unknown3);
+		// System.out.println("Unknown3: " + unknown3);
 		// this.display();
 	}
 

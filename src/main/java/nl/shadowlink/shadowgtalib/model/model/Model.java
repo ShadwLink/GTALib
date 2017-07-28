@@ -190,8 +190,8 @@ public class Model {
 			}
 		}
 
-		if (sys.ModelCollection.length != 0) {
-			Model2 test = sys.ModelCollection[0]._items.get(0);// load all
+		if (sys.mModelCollection.length != 0) {
+			Model2 test = sys.mModelCollection[0]._items.get(0);// load all
 																// geometries
 																// into one
 																// model
